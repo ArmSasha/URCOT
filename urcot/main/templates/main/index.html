@@ -1,0 +1,35 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+{% load static %}
+
+
+
+{% block content %}
+	<div class="features">
+		<h1>ЧУ ОДПО «Ульяновский региональный центр охраны труда»</h1>
+		<h2 class='cot_title'><br>Вы специалист по охране труда? <br></h2>
+		<p><b>Вы специалист по охране труда?</b> <br>
+		На нашем сайте вы можете найти много информации, которая поможет вам в вашей работе!</p>
+		<p class='cot_text2'>Наша фирма открыта в 2003 году. Всё это время наша фирма отлично выполняла все свои задачи. Многие фирмы обращаюся к нам на постоянной основе. Вот некоторые фирмы, с которыми мы работаем: </p>
+
+		<ul class='companies_list'>
+			<li class='companies_list_item'>Трёхсотенский</li>
+			<li class='companies_list_item'>Станкостроительный завод</li>
+			<li class='companies_list_item'>Регионвтормет</li>
+			<li class='companies_list_item'>УльяновскКурорт</li>
+			<li class='companies_list_item'>Техма</li>
+		</ul>
+
+		<span>Не отставай от таких крупных фирм и тоже подавай заявку ↓</span>
+
+		<button class='btn btn-warning btn_price' onclick="triggerDownload('{% static 'main/img/price.pdf' %}')">Скачать прайс-лист</button>
+	</div>
+
+
+<style type="text/css">
+	aside{
+		height: 980px;
+	}
+</style>
+{% endblock %}

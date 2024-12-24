@@ -1,0 +1,33 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+{% load static %}
+
+
+
+{% block content %}
+	<div class="features literature">
+		<h1>ЛИТЕРАТУРА</h1>
+
+		<div class="literature_images">
+			<img src="{% static 'main/img/literature/журналы.jpg' %}">
+			<img src="{% static 'main/img/literature/знаки-безопасности.jpg' %}">
+			<img src="{% static 'main/img/literature/удостоверения.jpg' %}">
+		</div>
+		<span class="literature_images_text">ЛИТЕРАТУРА, ПЛАКАТЫ, ЗНАКИ, УДОСТОВЕРЕНИЯ</span>
+
+		<p>Предлагаем большой выбор агитационных плакатов, знаков безопасности по различным тематикам, а также журналы, бланки удостоверений,бланки карточек СИЗ, бланки путевых листов, знаки безопасности, стенды*, нормативно-техническую литературу, видеофильмы.</p>
+
+		<img src="{% static 'main/img/literature/стенды.jpg' %}">
+		<p>* Изготавливаем стенды высокого качества стандартных и индивидуальных размеров с учетом требований заказчика
+			Для получения консультации оставьте Заявку или обратитесь к специалистам ЧУ -ОДПО «Ульяновский региональный центр охраны труда» по телефону: <br>
+			 +7 (8422) 27-18-44 <br>
+			Ждем Ваших заявок на E-mail: 417909@mail.ru</p>
+	</div>
+
+<style type="text/css">
+	aside{
+		height: 1074px;
+	}
+</style>
+{% endblock %}
